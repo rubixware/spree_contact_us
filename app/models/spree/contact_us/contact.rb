@@ -22,7 +22,7 @@ module Spree
       validates :message, :presence => true
       validates :name,    :presence => {:if => Proc.new{SpreeContactUs.require_name}}
       validates :subject, :presence => {:if => Proc.new{SpreeContactUs.require_subject}}
-
+      validates :phone,   :presence => {:if => Proc.new{SpreeContactUs.require_phone}}
       def initialize(attributes = {})
         [:email, :message, :name, :subject, :phone].each do |attribute|
           self.send("#{attribute}=", attributes[attribute]) if attributes and attributes.has_key?(attribute)
