@@ -10,10 +10,12 @@ es:
           email: "Email"
           message: "Mensaje"
           subject: "Asunto"
+          phone:  "Teléfono"
     contact_us_title: "Contacto"
     sent_by_contact_form: "Enviado por el formulario de contacto desde %{email}"
     sent_by_name: "Enviado por %{name} desde %{email}"
     subject: "Mensaje de contacto desde %{email}"
+    phone: "Teléfono de contacto : %{phone}"
     submit: "Enviar"
 
     contact_us:
